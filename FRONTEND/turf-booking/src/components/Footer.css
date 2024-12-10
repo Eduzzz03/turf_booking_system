@@ -1,0 +1,80 @@
+/* Ensure the body and root container fill the viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content should grow to fill available space */
+#root, .app-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh; /* Ensures the content takes full viewport height */
+}
+
+/* Footer styling */
+.footer {
+  background-color: #2d3748; /* Dark Gray Background */
+  color: #ffffff; /* White Text */
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100%;
+  
+  margin-top: auto; /* Push footer to the bottom */
+  position: relative;
+}
+
+/* Footer Heading */
+.footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Footer Paragraphs */
+.footer p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Footer Links (Optional) */
+.footer a {
+  color: #63b3ed; /* Light Blue */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .footer {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .footer h3 {
+    font-size: 1.25rem;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+}
+
+.social-media {
+  margin: 1rem 0;
+}
+
+.social-media a {
+  color: #ffffff;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #63b3ed;
+}

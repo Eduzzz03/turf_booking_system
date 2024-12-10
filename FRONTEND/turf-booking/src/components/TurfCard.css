@@ -1,0 +1,62 @@
+/* TurfCard.css */
+.turf-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: white;
+  }
+  
+  .turf-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .turf-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .turf-name {
+    margin: 16px 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .book-now-button {
+    background-color: #4CAF50; /* Green shade */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-now-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  .book-now-button:active {
+    background-color: #388E3C;
+  }
+  
+  @media (max-width: 768px) {
+    .turf-card {
+      max-width: 100%;
+      padding: 12px;
+    }
+  
+    .book-now-button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  

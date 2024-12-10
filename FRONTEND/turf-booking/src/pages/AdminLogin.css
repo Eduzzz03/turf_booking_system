@@ -1,0 +1,77 @@
+/* Admin Login Container */
+.admin-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #A3E635, #16A34A); /* Green shades gradient */
+    padding: 20px;
+  }
+  
+  /* Admin Login Box */
+  .admin-login-box {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Admin Login Title */
+  .admin-login-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #065F46; /* Darker green */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Input Fields */
+  .admin-login-input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.8rem 0;
+    border: 2px solid #D1FAE5; /* Light green border */
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .admin-login-input:focus {
+    border-color: #10B981; /* Darker green on focus */
+  }
+  
+  /* Login Button */
+  .admin-login-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #10B981; /* Main green */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-login-button:hover {
+    background-color: #059669; /* Darker green on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .admin-login-box {
+      padding: 1.5rem;
+    }
+    
+    .admin-login-title {
+      font-size: 1.6rem;
+    }
+    
+    .admin-login-input, .admin-login-button {
+      font-size: 1rem;
+    }
+  }
+  
