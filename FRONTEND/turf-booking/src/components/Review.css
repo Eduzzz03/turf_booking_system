@@ -1,0 +1,155 @@
+/* Reviews Page Container */
+.reviews-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;  /* Gradient background */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Page Title */
+.reviews-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Error Message Styling */
+.error-message {
+  color: #ffcccb;
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Review Form Styling */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.review-input,
+.review-textarea {
+  width: 100%;
+  max-width: 700px;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #2d3748; /* Dark text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-input:focus,
+.review-textarea:focus {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+/* Submit Button Styling */
+.submit-button {
+  background-color: #92c523;
+  color: #38a169;
+  border: 2px solid #ffffff;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+  align-self: center;
+}
+
+.submit-button:hover {
+  background-color: #38a169;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Reviews List */
+.reviews-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  align-items: center;
+}
+
+/* Individual Review Item */
+.review-item {
+  background-color: #ffffff;
+  color: #2d3748;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  width: 100%;
+  max-width: 700px;
+}
+
+.review-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* User Name in Review */
+.review-item h3 {
+  font-size: 1.5rem;
+  color: #276749; /* Dark green color */
+  margin-bottom: 0.5rem;
+}
+
+/* Review Text */
+.review-item p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reviews-page {
+    padding: 1.5rem;
+  }
+
+  .review-input,
+  .review-textarea {
+    font-size: 0.9rem;
+  }
+
+  .submit-button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .review-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .review-item p {
+    font-size: 0.9rem;
+  }
+}

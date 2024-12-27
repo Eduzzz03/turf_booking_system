@@ -1,0 +1,77 @@
+/* Gallery container */
+.gallery-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.gallery-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.gallery-inputs input {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.gallery-inputs button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.gallery-inputs button:hover {
+  background-color: #45a049;
+}
+
+/* Slider styles */
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+.slider-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slider-image p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}

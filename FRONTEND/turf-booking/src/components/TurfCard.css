@@ -1,0 +1,65 @@
+/* Turf Card Container */
+.turf-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 350px; /* Set max width for the card */
+  margin: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects for the Turf Card */
+.turf-card:hover {
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Image Style */
+.turf-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #e5e5e5;
+  transition: transform 0.3s ease;
+}
+
+.turf-card:hover .turf-image {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Turf Name Style */
+.turf-card h3 {
+  font-size: 1.6rem;
+  color: #2f855a; /* Green color */
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+/* Book Now Button */
+.book-now-button {
+  background-color: #38a169; /* Green background for the button */
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.book-now-button:hover {
+  background-color: #2f855a; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 600px) {
+  .turf-card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+  

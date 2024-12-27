@@ -1,0 +1,117 @@
+/* About Us Container */
+.about-us-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  color: #2d3748;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.about-us-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-us-header h1 {
+  font-size: 3rem;
+  color: #2f855a;
+}
+
+.about-us-header p {
+  font-size: 1.2rem;
+  color: #4a5568;
+}
+
+/* Content Section */
+.about-us-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Description Section */
+.about-us-description {
+  flex: 1 1 60%;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-description h2 {
+  font-size: 2rem;
+  color: #2f855a;
+  margin-bottom: 1rem;
+}
+
+/* Team Section */
+.about-us-team {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.about-us-team h2 {
+  font-size: 2rem;
+  color: #2f855a;
+  margin-bottom: 1rem;
+}
+
+.about-us-team p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #4a5568;
+}
+
+/* Team Members */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.team-member {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.team-member-image {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+}
+
+.team-member h3 {
+  font-size: 1.2rem;
+  color: #2d3748;
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-us-content {
+    flex-direction: column;
+  }
+
+  .about-us-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-us-header p {
+    font-size: 1rem;
+  }
+}
+  
